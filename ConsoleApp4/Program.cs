@@ -52,20 +52,7 @@ namespace ConsoleApp1
             }
         }
 
-       /* public static ulong[] LongAddition(ulong[] a, ulong[] b)
-        {
-            ulong carry = 0;
-            ulong temp = 0;
-            ulong[] Result = new ulong[Math.Max(a.Length, b.Length) + 1];
-            for (int i = 0; i < Math.Min(a.Length, b.Length); i++)
-            {
-                temp = a[i] + b[i] + carry;
-                carry = temp >> 32;
-                Result[i] = temp & 0xFFFFFFFF;
-            }
-            Result[a.Length] = carry;
-            return Result;
-        }*/
+       
         public static ulong[] LongAddition(ulong[] a, ulong[] b)
         {
             var maxlenght = Math.Max(a.Length, b.Length);
